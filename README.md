@@ -1,12 +1,19 @@
-# Starter Next/Hardhat Project
+# Ethereum ATM Smart Contract
+The Ethereum ATM Smart Contract is a basic Solidity smart contract that simulates an Ethereum ATM, allowing users to deposit and withdraw ETH. This contract provides a simple way for users to manage their balances and perform deposit and withdrawal operations.
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+# Features
+Deposit ETH: Users can deposit ETH into the contract.
+Withdraw ETH: Users can withdraw ETH from their account balance.
+Account Balance: Users can check their account balance.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Usage
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+## Deposit ETH
+Users can deposit ETH into the contract by sending ETH along with the deposit function call. The deposited amount will be added to the user's account balance.
+
+### Withdraw ETH
+Users can withdraw ETH from their account balance using the withdraw function. They need to specify the amount they want to withdraw.
+pragma solidity ^0.8.4;
+
+### Account Balance
+Users can check their account balance using the getBalance function. This function returns the user's account balance stored in the contract.
